@@ -1,6 +1,6 @@
 Package: fishdata
 Type: Package
-Title: A collection of fish population datasets
+Title: A small collection of fish population datasets
 Version: 0.1.0.9000
 Authors@R: person("Conor", "Neilson", email = "condwanaland@gmail.com", role = c("aut", "cre"))
 Maintainer: Conor Neilson <condwanaland@gmail.com>
@@ -11,6 +11,7 @@ Description: fishdata is a data package which contains four datasets
     Specified join functions are provided to combine the datasets as 
     necessary.
 License: GPL-3
+Depends: R (>= 2.10)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
