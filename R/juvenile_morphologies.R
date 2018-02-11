@@ -15,5 +15,8 @@
 #' \item{otolith_id}{unique identifier for the fishes otolith}
 #' }
 #' @usage data(juvenile_morphologies)
+#' @example {
+#' data(juvenile_morphologies)
+#' }
 
 "juvenile_morphologies"

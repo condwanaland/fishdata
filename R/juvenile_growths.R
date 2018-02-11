@@ -18,5 +18,8 @@
 #' increment}
 #' }
 #' @usage data(juvenile_growths)
+#' @example {
+#' data(juvenile_growths)
+#' }
 
 "juvenile_growths"

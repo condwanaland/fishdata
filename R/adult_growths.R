@@ -16,5 +16,8 @@
 #' increment}
 #' }
 #' @usage data(adult_growths)
+#' @example {
+#' data(adult_growths)
+#' }
 
 "adult_growths"

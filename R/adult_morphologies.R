@@ -13,5 +13,8 @@
 #' \item{month}{month that the fish was collected on}
 #' }
 #' @usage data(adult_morphologies)
+#' @example {
+#' data(adult_morphologies)
+#' }
 
 "adult_morphologies"
