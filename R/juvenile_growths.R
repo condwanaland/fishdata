@@ -17,5 +17,6 @@
 #' \item{distance}{the distance of the increment from the previous
 #' increment}
 #' }
+#' @usage data(juvenile_growths)
 
 "juvenile_growths"

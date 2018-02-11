@@ -12,5 +12,6 @@
 #' \item{site}{one of two collection sites}
 #' \item{month}{month that the fish was collected on}
 #' }
+#' @usage data(adult_morphologies)
 
 "adult_morphologies"

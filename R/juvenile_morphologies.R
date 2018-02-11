@@ -14,5 +14,6 @@
 #' \item{body_depth}{body depth of the fish at its maximum point}
 #' \item{otolith_id}{unique identifier for the fishes otolith}
 #' }
+#' @usage data(juvenile_morphologies)
 
 "juvenile_morphologies"
