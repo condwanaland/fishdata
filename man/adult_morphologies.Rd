@@ -14,7 +14,7 @@ posterior to caudal peduncle)}
 \item{month}{month that the fish was collected on}
 }}
 \usage{
-adult_morphologies
+data(adult_morphologies)
 }
 \description{
 A dataset containing morphological data for adult of a migratory

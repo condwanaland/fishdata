@@ -17,7 +17,7 @@ otolith}
 increment}
 }}
 \usage{
-adult_growths
+data(adult_growths)
 }
 \description{
 A dataset containing adult data for adults of a migratory

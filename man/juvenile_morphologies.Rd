@@ -16,7 +16,7 @@ posterior to caudal peduncle)}
 \item{otolith_id}{unique identifier for the fishes otolith}
 }}
 \usage{
-juvenile_morphologies
+data(juvenile_morphologies)
 }
 \description{
 A dataset containing morphological data for juveniles of a migratory

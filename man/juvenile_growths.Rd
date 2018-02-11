@@ -19,7 +19,7 @@ otolith}
 increment}
 }}
 \usage{
-juvenile_growths
+data(juvenile_growths)
 }
 \description{
 A dataset containing growth data for juveniles of a migratory

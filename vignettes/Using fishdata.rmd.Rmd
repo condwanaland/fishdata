@@ -1,0 +1,42 @@
+---
+title: "Using_fishdata"
+author: "Conor Neilson"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using_fishdata}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Combining datasets
+
+The four datasets can be successfully combined to address different scientific questions. 
+
+### Comparitive adult and juvenile morphologies
+
+```{r}
+library(dplyr)
+data("adult_morphologies")
+data("juvenile_morphologies")
+morphs <- bind_rows(adult_morphologies, juvenile_morphologies)
+```
+
+
+### Adding max age to the morphology datasets
+
+```{r}
+adult_growths %>% 
+  group_by(fish_id) %>% 
+  summarise(age = max(increment)) %>% 
+  right_join(adult_morphologies, by = "fish_id")
+```
+
+
+```{r}
+juvenile_growths %>% 
+  group_by(otolith_id) %>% 
+  summarise(age = max(increment)) %>% 
+  right_join(juvenile_morphologies, by = "otolith_id")
+```
+
