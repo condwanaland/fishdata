@@ -1,3 +1,7 @@
+## Resubmission
+
+This is a resubmission. In this version I have identified who, when, and where the data was collected in the description
+
 ## Test environments
 * local OS X install, R 3.4.2
 * win-builder (devel and release)
