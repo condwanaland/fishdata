@@ -1,7 +1,7 @@
 Package: fishdata
 Type: Package
 Title: A Small Collection of Fish Population Datasets
-Version: 1.0.0
+Version: 1.0.0.9000
 Authors@R: person("Conor", "Neilson", email = "condwanaland@gmail.com", role = c("aut", "cre"))
 Maintainer: Conor Neilson <condwanaland@gmail.com>
 Description: A collection of four datasets 
@@ -22,5 +22,6 @@ Suggests:
     magrittr,
     dm,
     ggplot2,
-    tidyr
+    tidyr,
+    DiagrammeRsvg
 VignetteBuilder: knitr

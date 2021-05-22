@@ -16,13 +16,16 @@ knitr::opts_chunk$set(
 
 ```{r, setup, echo=FALSE, message=FALSE}
 library(fishdata)
-library(dm)
 data("adult_growth")
 data("adult_metrics")
 data("adults")
 data("juvenile_growth")
 data("juvenile_metrics")
 data("juveniles")
+```
+
+```{r}
+library(dm)
 ```
 
 The data model of `fishdata` is designed to minimise duplication of data and split out disparate components. For this reason, almost any analysis while require joining across multiple tables, and therefore an understanding of the data model is needed. 
