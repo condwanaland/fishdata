@@ -120,4 +120,5 @@ head(adult_growth)
 For information on the column meanings, please see the documentation.
 For more information on the underlying data model (i.e., how the tables
 link to each other), please check out the ‘Data Model’ vignette.
-Finally, for some examples of using this data, please see \[\]
+Finally, for some examples of using this data, please see ‘Examples’
+vignette.

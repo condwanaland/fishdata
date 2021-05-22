@@ -20,5 +20,7 @@ Suggests:
     rmarkdown,
     dplyr,
     magrittr,
-    dm
+    dm,
+    ggplot2,
+    tidyr
 VignetteBuilder: knitr

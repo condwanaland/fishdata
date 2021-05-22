@@ -87,4 +87,4 @@ dm_draw(fish_dm_all_keys, view_type = "all")
 
 ```
 
-For some examples of how to use this data in practise, check out ...
+For some examples of how to use this data in practise, check out the 'Examples' vignette.
