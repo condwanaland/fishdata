@@ -1,0 +1,18 @@
+#' Base table of juvenile fish sample sites and dates.
+#'
+#' A dataset containing base location and time catch information for juvenile Galaxis maculatus.
+#'
+#' @format A dataset containing 496 rows and 7 variables
+#' \describe{
+#' \item{fish_code}{Primary key, uniquely identifies each fish}
+#' \item{fish}{Alternate key}
+#' \item{otolith_code}{Alternate key}
+#' \item{site}{Site that fish was caught on}
+#' \item{day}{Day group that the fish was collected on (1 = 1st fishing day, 5 = 5th fishing day). For exact catch date, see `catch_date`}
+#' \item{month}{Month that the fish was collected on}
+#' \item{catch_date}{Day that fish was caught on}
+#' }
+#' @examples
+#' data(juveniles)
+
+"juveniles"
