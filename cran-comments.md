@@ -1,20 +1,10 @@
-## Resubmission
-
-This is a resubmission. In this version I have identified who, when, and where the data was collected in the description
-
 ## Test environments
-* local OS X install, R 3.4.2
-* win-builder (devel and release)
+* local OSX R installation, R 4.0.2
+* ubuntu 20.04 (on Rhub), R 4.0.2
+* win-builder (devel)
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
+0 errors | 0 warnings | 0 notes
 
-* This is a new release.
-
-## Reverse dependencies
-
-This is a new release, so there are no reverse dependencies.
-
----
 

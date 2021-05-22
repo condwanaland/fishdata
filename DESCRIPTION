@@ -23,5 +23,6 @@ Suggests:
     dm,
     ggplot2,
     tidyr,
-    DiagrammeRsvg
+    DiagrammeRsvg,
+    DiagrammeR
 VignetteBuilder: knitr
