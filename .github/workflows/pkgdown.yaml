@@ -36,6 +36,7 @@ jobs:
         run: |
           remotes::install_deps(dependencies = TRUE)
           install.packages("DiagrammeRsvg")
+          install.packages("DiagrammeR")
           install.packages("pkgdown", type = "binary")
         shell: Rscript {0}
 
