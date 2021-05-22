@@ -29,3 +29,4 @@ Four datasets are provided in total, each of which will be discussed in depth in
 
 The growth datasets contain repeated measures of growth for each individual, so allow for the complete reconstruction of growth profiles. The ages of fish can be calculated by finding the maximum increment for each fish.
 
+
