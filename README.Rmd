@@ -22,9 +22,39 @@ knitr::opts_chunk$set(
 
 # fishdata
 
-fishdata provides some basic datasets for the study of fish population dynamics.
+fishdata provides some basic datasets for the study of fish population dynamics. All data was collected in the Wellington region of New Zealand between 2015-2016. Study species in question was the amphidromous fish *Galaxis maculatus*, commonly known as 'whitebait'. This data was collected as part of my [Masters thesis](https://conorneilson.com/thesis/) at Victoria University of Wellington.
 
-Four datasets are provided in total, each of which will be discussed in depth in the (upcoming) vignette. The datasets are split into **adult** and **juvenile** categories, with each age class having a **growth** and a  **morphology** dataset, 
+Six datasets are provided by the package (three for juvenile fish, three for adult fish). The *base* datasets contain one row per fish, and provide basic data around catch date and location. 
 
+```{r}
+library(fishdata)
+data("juveniles")
+data("adults")
+head(juveniles)
+```
+```{r}
+head(adults)
+```
+Building on the base datasets are the 'metrics' datasets which provide info around age, birthdate, and growth rates. These are still in the one row per fish format.
 
-The growth datasets contain repeated measures of growth for each individual, so allow for the complete reconstruction of growth profiles. The ages of fish can be calculated by finding the maximum increment for each fish.
+```{r}
+data("juvenile_metrics")
+head(juvenile_metrics)
+```
+```{r}
+data("adult_metrics")
+head(adult_metrics)
+```
+Finally, there are the growth datasets. The growth datasets contain measures of daily growth per fish (estimated using otolith rings). As these datasets use a row to represent one day of growth in a fish's life, they allow for the complete reconstruction of growth profiles. The ages of fish can also be calculated by finding the maximum period (or 'increment') for each fish.
+
+```{r}
+data("juvenile_growth")
+head(juvenile_growth)
+```
+
+```{r}
+data("adult_growth")
+head(adult_growth)
+```
+
+For information on the column meanings, please see the documentation. For more information on the underlying data model (i.e., how the tables link to each other), please check out the 'Data Model' vignette. Finally, for some examples of using this data, please see []

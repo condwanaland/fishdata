@@ -14,11 +14,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r, setup, echo=FALSE, message=FALSE}
 library(fishdata)
-```
-
-```{r, echo=FALSE, message=FALSE}
 library(dm)
 data("adult_growth")
 data("adult_metrics")
@@ -26,6 +23,47 @@ data("adults")
 data("juvenile_growth")
 data("juvenile_metrics")
 data("juveniles")
+```
+
+The data model of `fishdata` is designed to minimise duplication of data and split out disparate components. For this reason, almost any analysis while require joining across multiple tables, and therefore an understanding of the data model is needed. 
+
+There are two classes of data in `fishdata`: 'Adult' and 'Juvenile', referring to the respective age classes of Galaxis maculatus. These age classes have corresponding tables; `adults`, and `juveniles`. These two tables have one row per fish, and contain information about the catch date and location.
+
+
+```{r, echo=FALSE, message=FALSE}
+fish_base_dm <- dm(adults,
+              juveniles)
+dm_draw(fish_base_dm, view_type = "all")
+```
+
+From these tables, you can then link to the corresponding *metrics* tables (`adult_metrics` and `juvenile_metrics`). These tables add information around age, birthdate, and growth rates. 
+
+This is a 1:1 relation, and is executed by joining on the `fish_code` column in both tables. 
+
+```{r}
+fish_dm <- dm(adult_metrics,
+              adults,
+              juvenile_metrics,
+              juveniles)
+
+fish_dm_pk <-
+  fish_dm %>%
+  dm_add_pk(table = adults, columns = fish_code) %>%
+  dm_add_pk(juveniles, fish_code)
+
+fish_dm_all_keys <-
+  fish_dm_pk %>%
+  dm_add_fk(adult_metrics, fish_code, adults) %>%
+  dm_add_fk(juvenile_metrics, fish_code, juveniles)
+
+dm_draw(fish_dm_all_keys, view_type = "all")
+```
+Finally, there are also corresponding `growth` tables (`adult_growth` and `juvenile_growth`). These contain daily measurements of otolith growth for each fish. This otolith growth can be subsequently used to estimate somatic growth.
+
+As a single fish will have many days of growth, this is a 1:many relation, and is executed by joining on the `fish_code` column in both tables. 
+
+```{r, echo=FALSE, message=FALSE}
+
 fish_dm <- dm(adult_growth,
               adult_metrics,
               adults,
@@ -49,3 +87,4 @@ dm_draw(fish_dm_all_keys, view_type = "all")
 
 ```
 
+For some examples of how to use this data in practise, check out ...
