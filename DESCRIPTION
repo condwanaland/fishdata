@@ -1,7 +1,7 @@
 Package: fishdata
 Type: Package
 Title: A Small Collection of Fish Population Datasets
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: person("Conor", "Neilson", email = "condwanaland@gmail.com", role = c("aut", "cre"))
 Maintainer: Conor Neilson <condwanaland@gmail.com>
 Description: A collection of four datasets 
