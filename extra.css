@@ -1,0 +1,14 @@
+.navbar {
+    /* background-image: linear-gradient(#343a40, #343a40 60%, #343a40); */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #343a40;
+    -webkit-filter: none;
+    filter: none;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+}
+
+.navbar-default {
+    background-color: #343a40;
+    border-color: #343a40;
+}
