@@ -3,8 +3,12 @@ template:
     bootswatch: cerulean
 home:
   links:
-  - text: Browse source code at
+  - text: Browse source codes at
     href: https://github.com/condwanaland/fishdata
   - text: Report a bug at
     href: https://github.com/condwanaland/fishdata/issues
   strip_header: true
+navbar:
+  right:
+  - icon: fa-home fa-lg
+    href: https://conorneilson.com
