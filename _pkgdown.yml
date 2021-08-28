@@ -4,7 +4,7 @@ home:
   links:
   - text: Browse source code at
     href: https://github.com/condwanaland/fishdata
-  - text: Report bugs at
+  - text: Report a bug at
     href: https://github.com/condwanaland/fishdata/issues
   strip_header: true
 navbar:
