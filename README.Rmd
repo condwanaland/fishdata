@@ -21,8 +21,6 @@ knitr::opts_chunk$set(
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
-# fishdata
-
 fishdata provides some basic datasets for the study of fish population dynamics. All data was collected in the Wellington region of New Zealand between 2015-2016. Study species in question was the amphidromous fish *Galaxis maculatus*, commonly known as 'whitebait'. This data was collected as part of my [Masters thesis](https://conorneilson.com/thesis/) at Victoria University of Wellington.
 
 Six datasets are provided by the package (three for juvenile fish, three for adult fish). The *base* datasets contain one row per fish, and provide basic data around catch date and location. 

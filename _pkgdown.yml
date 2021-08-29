@@ -6,8 +6,11 @@ home:
     href: https://github.com/condwanaland/fishdata
   - text: Report a bug at
     href: https://github.com/condwanaland/fishdata/issues
-  strip_header: true
+  strip_header: false
 navbar:
   right:
-  - icon: fa-home fa-lg
-    href: https://conorneilson.com
+  - icon: fa-arrow-circle-left fa-lg
+    href: https://conorneilson.com/r
+    text: Go back to main site
+
+destination: '../Still-the-Data/static/r/fishdata'

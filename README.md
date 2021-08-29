@@ -14,8 +14,6 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
-# fishdata
-
 fishdata provides some basic datasets for the study of fish population
 dynamics. All data was collected in the Wellington region of New Zealand
 between 2015-2016. Study species in question was the amphidromous fish
